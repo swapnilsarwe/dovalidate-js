@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>doValidator 0.01</title>
+<link href="form.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<form class="myform" action="" method="post" name="form1" id="form1">
+		<h2>Comments form</h2>
+		<p class="description">Please post your comments about the post</p>
+		<p>
+			<label> Name </label> <input type="text" id="name" name="txtName" class="txt" />
+		</p>
+		<p>
+			<label> Email </label> <input type="text" id="email" name="txtEmail" class="txt" />
+		</p>
+		<p>
+			<label> Telephone </label> <input type="text" id="phone" name="txtPhone" class="txt" />
+		</p>
+		<p>
+			<label> Webpage </label> <input type="text" id="webpage" name="txtWebPage" class="txt" />
+		</p>
+		<p>
+			<label> Comments </label>
+			<textarea id="comment" rows="1" cols="1" name="txtComments"></textarea>
+		</p>
+		<input type="submit" value="Post Comments" name="btnPostComment" class="btn" />
+	</form>
+	<script type="text/javascript" src="scripts/dovalidate-0.1.js"></script>
+	<script type="text/javascript">
+		var dovalidate = new SWAPJS.doValidate();
+		dovalidate.init('form1', {
+			name : [ 'empty' ],
+			email : [ 'empty', 'email' ],
+			webpage : [ 'url' ],
+			comment : [ 'empty' ],
+			phone : [ 'digits' ]
+		});
+	</script>
+</body>
+</html>

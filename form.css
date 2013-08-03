@@ -1,0 +1,65 @@
+body {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 70%;
+}
+
+h2,form,p,input,label {
+	padding: 0;
+	margin: 0;
+}
+
+small {
+	font-size: 0.7em;
+}
+
+.myform {
+	margin: 0 auto;
+	border: 10px solid #cde855;
+	margin: 10px;
+	padding: 10px;
+}
+
+.myform h2 {
+	
+}
+
+.myform p {
+	font-size: 1.3em;
+	margin: 0;
+	padding: 0;
+}
+
+.myform .description {
+	padding: 0 0 15px 0;
+}
+
+.myform label {
+	display: block;
+	margin: 3px 10px;
+}
+
+.myform input,.myform textarea {
+	font: inherit;
+	margin: 0 10px;
+	padding: 2px 5px;
+	width: 90%;
+}
+
+.myform textarea {
+	height: 8em;
+}
+
+.myform input.btn {
+	text-align: center;
+	margin: 10px 100px;
+	width: 25%;
+}
+
+.warning,.error {
+	border: 2px solid red;
+}
+
+.mandatory {
+	color: red;
+	font-weight: bold;
+}
